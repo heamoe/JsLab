@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple of Five, Grade Calculator, Calculator, and FizzBuzz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 5px;
+        }
+        #multipleOfFiveResult, #result, #calculatorResult, #fizzBuzzResult {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiple of Five, Grade Calculator, Calculator, and FizzBuzz</h1>
+
+    <h2>1. Check Multiple of Five</h2>
+    <button onclick="checkMultipleOfFive()">Check Multiple of Five</button>
+    <div id="multipleOfFiveResult"></div>
+
+    <h2>2. Grade Calculator</h2>
+    <input type="number" id="score" placeholder="Enter score (0-100)">
+    <button onclick="calculateGrade()">Calculate Grade</button>
+    <div id="result"></div>
+
+    <h2>3. Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <div id="calculatorResult"></div>
+
+    <h2>4. FizzBuzz</h2>
+    <button onclick="fizzBuzz()">Run FizzBuzz</button>
+    <div id="fizzBuzzResult"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
